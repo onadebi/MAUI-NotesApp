@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="OnaNotes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:OnaNotes"
+    xmlns:pages="clr-namespace:OnaNotes.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar Title="Onasonic Notes">
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="icon_notes"
+            Route="MainPage" />
+        
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate pages:AboutPage}"
+            Icon="icon_about"
+            Route="AboutPage" />
+    </TabBar>
+
+</Shell>
