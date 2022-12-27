@@ -33,6 +33,10 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiSplashScreen Include="Resources\AppIcon\appiconfg.svg">
+		  <Color>#512BD4</Color>
+		  <BaseSize>128,128</BaseSize>
+		</MauiSplashScreen>
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -55,6 +59,10 @@
 	  <MauiCss Remove="NewFolder\**" />
 	  <MauiXaml Remove="NewFolder\**" />
 	  <None Remove="NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appiconfg.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
