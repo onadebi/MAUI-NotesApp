@@ -9,8 +9,8 @@
 
     <TabBar Title="Onasonic Notes">
         <ShellContent
-            Title="Notes"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            Title="Note"
+            ContentTemplate="{DataTemplate pages:NotePage}"
             Icon="icon_notes"
             Route="MainPage" />
         

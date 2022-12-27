@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OnaNotes.Pages.AboutPage"
-             Title="AboutPage">
+             Title="About Notes">
     <VerticalStackLayout Spacing="10" Margin="10" BackgroundColor="Green">
         <HorizontalStackLayout BackgroundColor="#ececec">
             <Image Source="dotnet_bot.png" SemanticProperties.Description="The dotnet bot waving hello!" HeightRequest="64"/>
