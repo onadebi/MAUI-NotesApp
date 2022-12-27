@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnaNotes.Views.AboutPage"
+             xmlns:models="clr-namespace:OnaNotes.Models"
+             Title="About Notes">
+    <ContentPage.BindingContext>
+        <models:About/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Padding="40">
+        <HorizontalStackLayout>
+            <Image Source="dotnet_bot.png" SemanticProperties.Description="The dotnet bot waving hello!" HeightRequest="64"/>
+
+            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="Center"/>
+            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+        <Label Text="{Binding Message}"/>
+        <Button Text="Learn more..." Clicked="LearnMore_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

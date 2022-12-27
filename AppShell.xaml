@@ -4,19 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:OnaNotes"
-    xmlns:pages="clr-namespace:OnaNotes.Pages"
+    xmlns:views="clr-namespace:OnaNotes.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar Title="Onasonic Notes">
         <ShellContent
-            Title="Note"
-            ContentTemplate="{DataTemplate pages:NotePage}"
+            Title="Notes"
+            ContentTemplate="{DataTemplate views:AllNotes}"
             Icon="icon_notes"
             Route="MainPage" />
         
         <ShellContent
             Title="About"
-            ContentTemplate="{DataTemplate pages:AboutPage}"
+            ContentTemplate="{DataTemplate views:AboutPage}"
             Icon="icon_about"
             Route="AboutPage" />
     </TabBar>
