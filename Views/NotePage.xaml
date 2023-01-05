@@ -4,8 +4,10 @@
              x:Class="OnaNotes.Views.NotePage"
              Title="Note update">
     <VerticalStackLayout Margin="5">
-        <Editor x:Name="txtEditor" Placeholder="Enter your note" TextChanged="txtEditor_TextChanged"
-                HeightRequest="200" Text="{Binding Text}" />
+            <Frame BackgroundColor="Yellow" CornerRadius="10" Padding="10,0" BorderColor="Gray">
+                <Editor x:Name="txtEditor" Placeholder="Enter your note" TextChanged="txtEditor_TextChanged"
+                HeightRequest="200" Text="{Binding Text}" AutoSize="TextChanges" />
+            </Frame>
         <Label x:Name="lblEditorWordCount" Text="0" />
         <Grid ColumnDefinitions="*,*" ColumnSpacing="10" Margin="20">
             <Button Text="Save" Clicked="SaveButton_Clicked"/>
